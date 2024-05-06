@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Calculators</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">FinancePlus</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="mortgage.html">Mortgage Calculator</a>
+          <a href="futureValue.html">Future Value Calculator</a>
+          <a href="annuity.html">Annuity Calculator</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="mortgageCalculator" class="calculator">
+        <h3>Mortgage Calculator</h3>
+        <input
+          type="number"
+          id="mortgagePrincipal"
+          placeholder="Principal amount ($)"
+          required
+        />
+        <input
+          type="number"
+          id="mortgageInterestRate"
+          placeholder="Annual Interest Rate (%)"
+          step="0.01"
+          required
+        />
+        <input
+          type="number"
+          id="mortgageLoanTerm"
+          placeholder="Loan Term (years)"
+          required
+        />
+        <button id="calculateMortgage">Calculate</button>
+        <div id="mortgageResult">
+          <p>Monthly Payment: <span id="mortgageMonthlyPayment"></span></p>
+          <p>Total Interest Paid: <span id="mortgageTotalInterest"></span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 FinancePlus. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
