@@ -56,13 +56,8 @@ footer {
   background-color: #005792;
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
-}
-
-#homeFooter {
-  margin: 35rem auto;
-}
-
-#homeImage {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 80px;
 }
