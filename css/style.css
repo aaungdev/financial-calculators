@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #005792;
+  background-color: #00274d;
   color: #fff;
   padding: 1rem 0;
 }
@@ -24,22 +24,103 @@ nav {
   padding: 0 2rem;
 }
 
-.nav-links a {
+.navLinks a {
   color: #fff;
   text-decoration: none;
   margin-left: 1rem;
+  transition: color 0.3s;
+}
+
+.navLinks a:hover {
+  color: #ffa500;
 }
 
 .hero {
-  background: #0077c0;
+  background: url('images/hero-background.jpg') no-repeat center center/cover;
+  position: relative;
   color: #fff;
-  padding: 10rem;
   text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+}
+
+.ctaButton {
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #a93226;
+}
+
+.services {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.serviceList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.serviceItem {
+  background-color: #f4f7fa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.serviceItem img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.serviceItem h3 {
+  margin: 1rem 0;
+}
+
+.serviceItem:hover {
+  transform: translateY(-5px);
+  background-color: #e0e0e0;
 }
 
 .calculator {
   max-width: 600px;
-  margin: 12rem auto;
+  margin: 2rem auto;
   padding: 1rem;
   background: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -53,11 +134,11 @@ nav {
 }
 
 footer {
-  background-color: #005792;
+  background-color: #00274d;
   color: #fff;
   text-align: center;
-  position: fixed;
+  padding: 1rem 0;
+  position: relative;
   bottom: 0;
   width: 100%;
-  min-height: 80px;
 }
