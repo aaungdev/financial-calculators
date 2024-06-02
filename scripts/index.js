@@ -15,7 +15,12 @@ window.onload = function () {
   if (mortgageButton) {
     mortgageButton.onclick = calculateMortgage;
   }
+  var hamburger = document.querySelector(".hamburger");
+  if (hamburger) {
+    hamburger.onclick = toggleMenu;
+  }
 };
+
 
 function calculateAnnuityPV() {
   var payment = document.getElementById("annuityPayment").value;
@@ -66,3 +71,8 @@ function calculateMortgage() {
   document.getElementById("mortgageMonthlyPayment").innerText = monthlyPayment.toFixed(2);
   document.getElementById("mortgageTotalInterest").innerText = totalInterest.toFixed(2);
 }
+    function toggleMenu() {
+    const navLinks = document.querySelector('.navLinks');
+    navLinks.classList.toggle('show');
+  }
+

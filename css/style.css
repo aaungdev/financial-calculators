@@ -15,6 +15,20 @@ body {
   margin: 0;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
 .pageContainer {
   display: flex;
   flex-direction: column;
@@ -39,6 +53,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  position: relative;
+}
+
+.navLinks {
+  display: flex;
 }
 
 .navLinks a {
@@ -351,13 +370,14 @@ footer {
   width: 100%;
   flex-shrink: 0;
 }
-
+/* Styles for screen width up to 1200px */
 @media (max-width: 1200px) {
   .calculator {
     min-width: 70%;
   }
 }
 
+/* Styles for screen width up to 992px */
 @media (max-width: 992px) {
   .heroContent h1 {
     font-size: 2.5em;
@@ -372,6 +392,7 @@ footer {
   }
 }
 
+/* Styles for screen width up to 768px */
 @media (max-width: 768px) {
   .hero {
     height: 50vh;
@@ -399,6 +420,7 @@ footer {
   }
 }
 
+/* Styles for screen width up to 576px */
 @media (max-width: 576px) {
   .heroContent h1 {
     font-size: 1.8em;
@@ -423,16 +445,27 @@ footer {
   }
 
   .navLinks {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
+    text-align: center;
+    background-color: #1b597d;
+  }
+
+  .navLinks.show {
+    display: flex;
   }
 
   .navLinks a {
     margin: 0.5rem 0;
     padding: 0.5rem;
     width: 100%;
-    text-align: left;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 2rem; /* Positioning hamburger to the right */
   }
 
   .calculator {
