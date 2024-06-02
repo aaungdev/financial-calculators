@@ -9,6 +9,15 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f4f7fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 header {
@@ -73,7 +82,7 @@ nav {
 
 .heroContent h1 {
   font-size: 3em;
-  color: #000000;
+  color: #043f5c;
 }
 
 .ctaButton {
@@ -155,6 +164,5 @@ footer {
   text-align: center;
   padding: 1rem 0;
   position: relative;
-  bottom: 0;
   width: 100%;
 }

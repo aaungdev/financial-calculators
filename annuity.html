@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,51 +7,52 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">FinancePlus</div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="mortgage.html">Mortgage Calculator</a>
-          <a href="futureValue.html">Future Value Calculator</a>
-          <a href="annuity.html">Annuity Calculator</a>
-        </div>
-      </nav>
-    </header>
+    <div class="pageContainer">
+      <header>
+        <nav>
+          <div class="logo">FinancePlus</div>
+          <div class="navLinks">
+            <a href="index.html">Home</a>
+            <a href="mortgage.html">Mortgage Calculator</a>
+            <a href="futureValue.html">Future Value Calculator</a>
+            <a href="annuity.html">Annuity Calculator</a>
+          </div>
+        </nav>
+      </header>
 
-    <main>
-      <section id="annuityCalculator" class="calculator">
-        <h3>Present Value of Annuity Calculator</h3>
-        <input
-          type="number"
-          id="annuityPayment"
-          placeholder="Monthly Payment ($)"
-          required
-        />
-        <input
-          type="number"
-          id="annuityInterestRate"
-          placeholder="Annual Interest Rate (%)"
-          step="0.01"
-          required
-        />
-        <input
-          type="number"
-          id="annuityYears"
-          placeholder="Years to Pay Out"
-          required
-        />
-        <button id="calculateAnnuityPV">Calculate</button>
-        <div id="annuityResult">
-          <p>Present Value: <span id="annuityPresentValue"></span></p>
-        </div>
-      </section>
-    </main>
+      <main>
+        <section id="annuityCalculator" class="calculator">
+          <h3>Present Value of Annuity Calculator</h3>
+          <input
+            type="number"
+            id="annuityPayment"
+            placeholder="Monthly Payment ($)"
+            required
+          />
+          <input
+            type="number"
+            id="annuityInterestRate"
+            placeholder="Annual Interest Rate (%)"
+            step="0.01"
+            required
+          />
+          <input
+            type="number"
+            id="annuityYears"
+            placeholder="Years to Pay Out"
+            required
+          />
+          <button id="calculateAnnuityPV">Calculate</button>
+          <div id="annuityResult">
+            <p>Present Value: <span id="annuityPresentValue"></span></p>
+          </div>
+        </section>
+      </main>
 
-    <footer>
-      <p>&copy; 2024 FinancePlus. All rights reserved.</p>
-    </footer>
-
+      <footer>
+        <p>&copy; 2024 FinancePlus. All rights reserved.</p>
+      </footer>
+    </div>
     <script src="scripts/index.js"></script>
   </body>
 </html>
