@@ -56,7 +56,7 @@ nav {
 }
 
 .heroOverlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(193, 193, 193, 0.623);
   position: absolute;
   top: 0;
   left: 0;
@@ -71,11 +71,16 @@ nav {
   margin: auto;
 }
 
+.heroContent h1 {
+  font-size: 3em;
+  color: #000000;
+}
+
 .ctaButton {
-  background-color: #ffa500;
+  background-color: #49aee0;
   color: #fff;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -84,7 +89,7 @@ nav {
 }
 
 .ctaButton:hover {
-  background-color: #ff8000;
+  background-color: #004161;
 }
 
 .services {
