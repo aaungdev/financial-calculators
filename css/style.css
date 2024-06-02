@@ -465,7 +465,7 @@ footer {
   .hamburger {
     display: flex;
     position: absolute;
-    right: 2rem; /* Positioning hamburger to the right */
+    right: 2rem; 
   }
 
   .calculator {
