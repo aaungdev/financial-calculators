@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
 }
 
 .pageContainer {
@@ -19,9 +20,16 @@ body {
   flex-direction: column;
   flex: 1;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
 
 header {
-  background-color: #00274d;
+  background-color: #1b597d;
   color: #fff;
   padding: 1rem 0;
 }
@@ -145,7 +153,6 @@ nav {
 
 .calculator {
   max-width: 600px;
-  margin: 2rem auto;
   padding: 1rem;
   background: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -159,10 +166,11 @@ nav {
 }
 
 footer {
-  background-color: #00274d;
+  background-color: #1b597d;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
   position: relative;
   width: 100%;
+  flex-shrink: 0;
 }
