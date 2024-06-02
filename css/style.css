@@ -36,14 +36,23 @@ nav {
 }
 
 .hero {
-  background: url('images/hero-background.jpg') no-repeat center center/cover;
   position: relative;
   color: #fff;
   text-align: center;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .heroOverlay {
@@ -63,9 +72,10 @@ nav {
 }
 
 .ctaButton {
-  background-color: #c0392b;
+  background-color: #ffa500;
   color: #fff;
   border: none;
+  border-radius: 25px;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -74,7 +84,7 @@ nav {
 }
 
 .ctaButton:hover {
-  background-color: #a93226;
+  background-color: #ff8000;
 }
 
 .services {
