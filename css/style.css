@@ -29,11 +29,13 @@ body {
   background-color: #fff;
   margin: 4px 0;
 }
+
 .pageContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -146,181 +148,10 @@ nav {
   gap: 2rem;
 }
 
-.serviceItem {
-  background-color: #f4f7fa;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.serviceItem img {
-  width: 100%;
-  height: 60%;
-  border-radius: 8px;
-}
-
-.serviceItem h3 {
-  margin: 1rem 0;
-}
-
-.serviceItem:hover {
-  transform: translateY(-5px);
-  background-color: #e0e0e0;
-}
-
-.calculator {
-  min-width: 800px;
-  padding: 1rem;
-  background: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.calculator input,
-.calculator button {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-footer {
-  background-color: #1b597d;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  position: relative;
-  width: 100%;
-  flex-shrink: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f7fa;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.pageContainer {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-header {
-  background-color: #1b597d;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-}
-
-.navLinks a {
-  color: #fff;
+.serviceLink {
   text-decoration: none;
-  margin-left: 1rem;
-  transition: color 0.3s;
-}
-
-.navLinks a:hover {
-  color: #ffa500;
-}
-
-.hero {
-  position: relative;
-  color: #fff;
-  text-align: center;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.heroBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.heroOverlay {
-  background: rgba(193, 193, 193, 0.623);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.heroContent {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  margin: auto;
-}
-
-.heroContent h1 {
-  font-size: 3em;
-  color: #043f5c;
-}
-
-.ctaButton {
-  background-color: #49aee0;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
-}
-
-.ctaButton:hover {
-  background-color: #004161;
-}
-
-.services {
-  padding: 4rem 2rem;
-  background-color: #fff;
-  text-align: center;
-}
-
-.services h2 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.serviceList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  color: inherit;
+  display: block;
 }
 
 .serviceItem {
@@ -329,17 +160,31 @@ nav {
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   width: 300px;
+  height: 400px;
   transition: transform 0.3s, background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .serviceItem img {
   width: 100%;
-  height: 60%;
-  border-radius: 8px;
+  height: 66.66%;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
 }
 
-.serviceItem h3 {
-  margin: 1rem 0;
+.serviceItem h3,
+.serviceItem p {
+  margin: 1rem;
+  text-align: center;
+}
+
+.serviceItem p {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .serviceItem:hover {
@@ -370,14 +215,13 @@ footer {
   width: 100%;
   flex-shrink: 0;
 }
-/* Styles for screen width up to 1200px */
+
 @media (max-width: 1200px) {
   .calculator {
     min-width: 70%;
   }
 }
 
-/* Styles for screen width up to 992px */
 @media (max-width: 992px) {
   .heroContent h1 {
     font-size: 2.5em;
@@ -392,7 +236,6 @@ footer {
   }
 }
 
-/* Styles for screen width up to 768px */
 @media (max-width: 768px) {
   .hero {
     height: 50vh;
@@ -420,7 +263,6 @@ footer {
   }
 }
 
-/* Styles for screen width up to 576px */
 @media (max-width: 576px) {
   .heroContent h1 {
     font-size: 1.8em;
@@ -465,7 +307,7 @@ footer {
   .hamburger {
     display: flex;
     position: absolute;
-    right: 2rem; 
+    right: 2rem;
   }
 
   .calculator {
